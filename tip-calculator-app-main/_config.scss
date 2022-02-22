@@ -6,3 +6,7 @@ $labelText: hsl(186, 14%, 43%);
 $personText: hsl(184, 14%, 56%);
 $siteBg: hsl(185, 41%, 84%);
 $inpFieldBg: hsl(189, 41%, 97%);
+
+@mixin borderVanish {
+    border: 1px solid transparent;
+}

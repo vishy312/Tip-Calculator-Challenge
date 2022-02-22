@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Mono", sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
+  background-color: #c5e4e7;
+}
+
+header {
+  padding: 3.3rem 7rem 2.2rem 9.05rem;
+}
+
+main {
+  background-color: white;
+  border-radius: 2rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #5e7a7d;
+}
+
+.input-card {
+  margin: 2rem 2.1rem;
+}
+
+.inp-text {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #f4fafa;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  color: #00494d;
+  font-weight: 700;
+  font-size: 1.7rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bill-container {
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.2rem;
+}
+
+.tip-container {
+  margin-top: 0.55rem;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+}
+
+.tip-btns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 47% 47%;
+      grid-template-columns: 47% 47%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.0rem;
+}
+
+.tip {
+  background-color: #00494d;
+  padding-block: 0.35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 0.2rem;
+}
+
+.selected {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.people-container {
+  margin-top: 2rem;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.4rem;
+  color: #00494d;
+}
+
+.label-wrapper {
+  color: #5e7a7d;
+}
+
+.output-card {
+  background-color: #00494d;
+  padding: 2rem 1rem;
+  margin-top: -1.6rem;
+  margin-inline: 1.8rem;
+  border-radius: 1.2rem;
+}
+
+.result-text h6 {
+  font-weight: 700;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=main.css.map */
