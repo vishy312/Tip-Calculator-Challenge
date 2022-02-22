@@ -15,30 +15,96 @@
   </style>
 </head>
 <body>
+  <header>
+    <img src="images/logo.svg" alt="logo" class="logo">
+  </header>
+  <main>
+    <!--INPUT-->
+    <!--CARD-->
+    <div class="input-card">
 
-  Bill
+      <!--bill container-->
+      <div class="bill-container">
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+        <div class="label-wrapper">
+          <label for="inp-text">Bill</label>
+        </div>
 
-  Number of People
+        <div class="inp-wrapper">
+          <input type="text" class="inp-text" name="inp-bill" placeholder="0">
+          <img src="images/icon-dollar.svg" alt="dollor icon" class="dollor">
+        </div>
 
-  Tip Amount
-  / person
+      </div>
 
-  Total
-  / person
+      <!--tip container-->
+      <div class="tip-container">
 
-  Reset
-  
+        <div class="label-wrapper">
+          <label for="inp-text">Select Tip %</label>
+        </div>
+
+        <div class="tip-btns">
+          <buttons class="tip">5%</buttons>
+          <buttons class="tip">10%</buttons>
+          <buttons class="tip">15%</buttons>
+          <buttons class="tip">25%</buttons>
+          <buttons class="tip">50%</buttons>
+          <buttons class="tip custom-tip">
+            <input type="text" class="custom-tip" name="custom-tip" placeholder="Custom">
+          </buttons>
+          
+        </div>
+      </div>
+
+      <!--people container-->
+      <div class="people-container">
+      
+        <div class="label-wrapper">
+          <label for="inp-text">Number of People</label>
+        </div>
+      
+        <div class="inp-wrapper">
+          <input type="text" class="inp-text" name="inp-bill" placeholder="0">
+          <img src="images/icon-person.svg" alt="person icon" class="person">
+        </div>
+      
+      </div>
+    </div>
+    
+    <!--OUTPUT-->
+    <!--CARD-->
+
+    <div class="output-card">
+
+      <!--result-->
+      <div class="result">
+        <!--tip amount-->
+        <div class="tip-amount">
+          <div class="result-text">
+            <h6>Tip Amount</h6>
+            <p>/ person</p>
+          </div>
+          <h1 class="result-no">$0.00</h1>
+        </div>
+        <!--total bill-->
+        <div class="total">
+          <div class="result-text">
+            <h6>Total</h6>
+            <p>/ person</p>
+          </div>
+          <h1 class="result-no">$0.00</h1>
+        </div>
+      </div>
+
+      <!--reset button-->
+      <button class="reset-btn">RESET</button>
+    </div>
+
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Vishal Pal</a>.
   </div>
 </body>
 </html>
