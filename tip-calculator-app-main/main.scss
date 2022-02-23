@@ -269,4 +269,12 @@ main {
   .total {
     justify-content: space-between;
   }
+
+  .custom-btn {
+      .custom-tip {
+          padding-inline: 1rem;
+          font-size: 1rem;
+          padding-block: 0.75rem;
+      }
+  }
 }

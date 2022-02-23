@@ -338,5 +338,10 @@ main {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .custom-btn .custom-tip {
+    padding-inline: 1rem;
+    font-size: 1rem;
+    padding-block: 0.75rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
