@@ -32,7 +32,7 @@
 
         <div class="inp-wrapper">
           <input type="text" class="inp-text" name="inp-bill" placeholder="0">
-          <img src="images/icon-dollar.svg" alt="dollor icon" class="dollor">
+          <img src="images/icon-dollar.svg" alt="dollor icon" class="icon">
         </div>
 
       </div>
@@ -45,14 +45,14 @@
         </div>
 
         <div class="tip-btns">
-          <buttons class="tip">5%</buttons>
-          <buttons class="tip">10%</buttons>
-          <buttons class="tip selected">15%</buttons>
-          <buttons class="tip">25%</buttons>
-          <buttons class="tip">50%</buttons>
-          <buttons class="tip custom-tip">
+          <button class="tip">5%</button>
+          <button class="tip">10%</button>
+          <button class="tip selected">15%</button>
+          <button class="tip">25%</button>
+          <button class="tip">50%</button>
+          <div class="custom-btn">
             <input type="text" class="custom-tip" name="custom-tip" placeholder="Custom">
-          </buttons>
+          </div>
           
         </div>
       </div>
@@ -62,11 +62,12 @@
       
         <div class="label-wrapper">
           <label for="inp-text">Number of People</label>
+          <small class="error">Can't be zero</small>
         </div>
       
         <div class="inp-wrapper">
-          <input type="text" class="inp-text" name="inp-bill" placeholder="0">
-          <img src="images/icon-person.svg" alt="person icon" class="person">
+          <input type="text" class="inp-text person-error" name="inp-bill" placeholder="0">
+          <img src="images/icon-person.svg" alt="person icon" class="icon">
         </div>
       
       </div>

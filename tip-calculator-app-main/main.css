@@ -19,13 +19,14 @@ body {
 }
 
 header {
-  padding: 3.3rem 7rem 2.2rem 9.05rem;
+  padding: 3.3rem 7rem 2.2rem 40vw;
 }
 
 main {
   background-color: white;
-  border-radius: 2rem;
+  border-radius: 2rem 2rem 0 0;
   width: 100%;
+  padding-bottom: 2rem;
   font-size: 1rem;
   font-weight: 700;
   color: #5e7a7d;
@@ -35,17 +36,39 @@ main {
   margin: 2rem 2.1rem;
 }
 
+.error {
+  float: right;
+  color: red;
+}
+
 .inp-text {
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding-block: 0.5rem;
+  padding-left: 85%;
   background-color: #f4fafa;
   border: 1px solid transparent;
   border-radius: 0.5rem;
   color: #00494d;
   font-weight: 700;
   font-size: 1.7rem;
+  cursor: pointer;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.inp-text:focus {
+  color: #00494d;
+  border: 1px solid #00494d;
+}
+
+.person-error {
+  border: 1px solid red;
+}
+
+.icon {
+  position: relative;
+  left: 7%;
+  top: -2.2rem;
 }
 
 .bill-container {
@@ -90,12 +113,12 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1.0rem;
+  gap: 1rem;
 }
 
 .tip {
   background-color: #00494d;
-  padding-block: 0.35rem;
+  padding-block: 0.55rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,6 +131,31 @@ main {
   color: white;
   font-size: 1.5rem;
   border-radius: 0.2rem;
+  font-weight: 700;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.tip:hover {
+  background-color: #c5e4e7;
+}
+
+.custom-btn .custom-tip {
+  padding-inline: 7vw;
+  width: 100%;
+  padding-block: 0.55rem;
+  color: #7f9c9f;
+  font-size: 1.5rem;
+  border-radius: 0.2rem;
+  font-weight: 700;
+  border: 1px solid transparent;
+  background-color: #f4fafa;
+  cursor: pointer;
+}
+
+.custom-btn .custom-tip:focus {
+  color: #00494d;
+  border: 1px solid #00494d;
 }
 
 .selected {
@@ -138,14 +186,79 @@ main {
 
 .output-card {
   background-color: #00494d;
-  padding: 2rem 1rem;
+  padding: 2.2rem 1.5rem 1.5rem 1.5rem;
   margin-top: -1.6rem;
-  margin-inline: 1.8rem;
+  margin-inline: 1.6rem;
   border-radius: 1.2rem;
 }
 
-.result-text h6 {
+.result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.3rem;
+}
+
+.result .tip-amount,
+.result .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.result .tip-amount .result-text,
+.result .total .result-text {
   font-weight: 700;
-  font-size: 1rem;
+}
+
+.result .tip-amount .result-text h6,
+.result .total .result-text h6 {
+  font-size: 0.97rem;
+  color: white;
+}
+
+.result .tip-amount .result-text p,
+.result .total .result-text p {
+  font-size: 0.8rem;
+}
+
+.result .tip-amount .result-no,
+.result .total .result-no {
+  color: #26c0ab;
+}
+
+.reset-btn {
+  width: 100%;
+  background-color: #26c0ab;
+  border: 1px solid transparent;
+  color: #00494d;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  padding-block: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background-color: #c5e4e7;
 }
 /*# sourceMappingURL=main.css.map */
