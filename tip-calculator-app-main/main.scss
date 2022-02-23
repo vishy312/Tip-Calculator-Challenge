@@ -38,7 +38,10 @@ main {
 .error {
   float: right;
   color: red;
-
+  visibility: hidden;
+}
+.show-error{
+    visibility: visible;
 }
 
 .inp-text {
@@ -203,5 +206,67 @@ main {
 
   &:hover {
     background-color: $siteBg;
+  }
+}
+
+// media query //
+
+@media (min-width: 1145px) {
+  .logo {
+    margin: 7rem 6.5rem 3.5rem 6.5rem;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 64%;
+    margin-inline: auto;
+    border-radius: 2rem;
+    padding-inline: 3rem 2rem;
+    padding-block: 0.9rem;
+    margin-bottom: 7rem;
+  }
+
+  .tip-btns {
+    grid-template-columns: 31.5% 31.5% 31.5%;
+    gap: 0.85rem;
+    padding-left: 0.2rem;
+  }
+
+  .input-card {
+    width: 45%;
+    margin-inline: 0;
+
+    .people-container {
+      justify-content: baseline;
+      gap: 0;
+      .label-wrapper {
+        margin-top: 0.8rem;
+      }
+    }
+  }
+
+  .inp-text {
+    margin-top: 0.5rem;
+  }
+  .output-card {
+    width: 49%;
+    margin-inline: 0;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5.5rem;
+  }
+
+  .result-no {
+    font-size: 3.2rem;
+  }
+
+  .tip-amount,
+  .total {
+    justify-content: space-between;
   }
 }
