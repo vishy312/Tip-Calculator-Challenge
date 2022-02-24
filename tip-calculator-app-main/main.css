@@ -49,7 +49,8 @@ main {
 .inp-text {
   width: 100%;
   padding-block: 0.5rem;
-  padding-left: 85%;
+  text-align: right;
+  padding-right: 1rem;
   background-color: #f4fafa;
   border: 1px solid transparent;
   border-radius: 0.5rem;
@@ -156,6 +157,8 @@ main {
   border: 1px solid transparent;
   background-color: #f4fafa;
   cursor: pointer;
+  text-align: right;
+  padding-right: 1rem;
 }
 
 .custom-btn .custom-tip:focus {

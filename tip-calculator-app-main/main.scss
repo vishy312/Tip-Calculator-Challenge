@@ -40,14 +40,15 @@ main {
   color: red;
   visibility: hidden;
 }
-.show-error{
-    visibility: visible;
+.show-error {
+  visibility: visible;
 }
 
 .inp-text {
   width: 100%;
   padding-block: 0.5rem;
-  padding-left: 85%;
+  text-align: right;
+  padding-right: 1rem;
   background-color: $inpFieldBg;
   @include borderVanish;
   border-radius: 0.5rem;
@@ -127,6 +128,8 @@ main {
     @include borderVanish;
     background-color: $inpFieldBg;
     cursor: pointer;
+    text-align: right;
+    padding-right: 1rem;
 
     &:focus {
       color: $outputCardBg;
@@ -271,10 +274,10 @@ main {
   }
 
   .custom-btn {
-      .custom-tip {
-          padding-inline: 1rem;
-          font-size: 1rem;
-          padding-block: 0.75rem;
-      }
+    .custom-tip {
+      padding-inline: 1rem;
+      font-size: 1rem;
+      padding-block: 0.75rem;
+    }
   }
 }
